@@ -9,23 +9,33 @@ A runnable college project that combines Java OOP, multithreading, a Swing GUI, 
 
 ## 💻 Run on Windows
 
-1. **Extract the project folder** from the downloaded `multiclient-chat.zip`.
-2. **Open Command Prompt** or the VS Code terminal inside the extracted folder.
+1. **Download the Project**
+   * Download the latest project package: **[multiclient-chat.zip](multiclient-chat.zip)**
+   * Extract the project folder to your preferred local directory.
+   *(Note: If you are using GitHub Releases, replace `multiclient-chat.zip` inside the parenthesis with your direct download URL).*
+
+2. **Open the Terminal**
+   * Open Command Prompt or the VS Code terminal inside the extracted folder.
+
 3. **Verify Java installation**:
    ```bat
    java -version
    javac -version
    ```
+
 4. **Start the Server** by double-clicking `run-server.bat`, or run:
    ```bat
    build.bat
    java -cp out chatapp.server.ChatServer 5000
    ```
+
 5. **Start a Client** by double-clicking `run-client.bat`, or opening a second terminal and running:
    ```bat
    java -cp out chatapp.client.ChatClient
    ```
+
 6. **Connect the Client**: Keep the host as `127.0.0.1`, port as `5000`, enter a username, and click **Connect**.
+
 7. **Add more clients** by running `run-client.bat` again. Type `/quit` or click **Disconnect** to leave.
 
 *Note: The server automatically writes chat events to `chat-history.log` in its current working directory.*
